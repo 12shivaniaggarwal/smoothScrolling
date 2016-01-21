@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 2000);
+       return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+</head>
+<body>
+
+
+
+
+<h1 id="top">JUST TESTING</h1>
+<a href="#section2" class="smoothscroll">Goes to 2
+</a><br>
+<a href="#hey" class="smoothscroll">Goes to Hey
+</a>
+<br><br>
+<section id="section1">SECtiOn 1</section><br>
+<a href="#top" class="smoothscroll">Go back to top</a><br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+<section id="section2">SECTION 2</section><br>
+<a href="#top" class="smoothscroll">Go back to top</a><br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+<h2>Just a break</h2>
+<section id="hey">HHHH</section><br>
+<a href="#top" class="smoothscroll">Go back to top</a><br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>Hey<br>
+
+<a href="#top" class="smoothscroll">Go back to top</a><br>
+
+</body>
+</html>
